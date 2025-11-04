@@ -24,8 +24,8 @@ jobs:
     - name: Build and push to Docker Hub
       uses: docker/build-push-action@v6
       with:
-        context: .
-        file: ./python_test/Dockerfile
+        context: ./python_test
+        file: ./Dockerfile
         push: true
         tags: |
           efrem27/automation_devops_25:latest
