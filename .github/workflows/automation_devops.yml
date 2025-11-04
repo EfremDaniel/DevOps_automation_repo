@@ -25,7 +25,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         context: .
-        file: ./Dockerfile
+        file: ./python_test/Dockerfile
         push: true
         tags: |
           efrem27/automation_devops_25:latest
