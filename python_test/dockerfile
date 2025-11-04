@@ -1,0 +1,14 @@
+# Använd officiell Python-bild
+FROM python:3.12-slim
+
+# Ställ in arbetskatalog
+WORKDIR /app
+
+# Kopiera appen
+COPY hello-world.py .
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Kör appen
+CMD ["python", "hello-world.py"]
