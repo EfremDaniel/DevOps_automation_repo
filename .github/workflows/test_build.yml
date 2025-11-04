@@ -2,7 +2,7 @@
 
 
 
-name: Test and Build (simple)
+name: Test and Build 
 
 on:
   push:
